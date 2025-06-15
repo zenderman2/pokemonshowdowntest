@@ -1,0 +1,22 @@
+const {Dex} = require('pokemon-showdown');
+
+
+module.exports = {
+  data: {
+    name: "getpokemon",
+    description: "Get details about a pokemon.",
+  },
+
+  run: async ({ interaction, client }) => {
+    try {
+      await interaction.deferReply({ ephemeral: true });
+
+      const pokemon = Dex.species.get('Bulbasaur');
+      console.log(pokemon);
+      await interaction.editReply({ content: `Done.` });
+    } catch (e) {
+      console.error(e);
+      await interaction.editReply({ content: 'There was an error running the battle.' });
+    }
+  },
+};
