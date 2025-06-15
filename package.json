@@ -1,0 +1,19 @@
+{
+  "name": "test",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@pkmn/dex": "^0.9.32",
+    "@pkmn/randoms": "^0.9.32",
+    "@pkmn/sim": "^0.9.32",
+    "commandkit": "^0.1.10",
+    "discord.js": "^14.18.0",
+    "pokemon-showdown": "^0.11.10"
+  }
+}
